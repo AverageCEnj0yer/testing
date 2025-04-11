@@ -14,7 +14,7 @@
             count++;
 
             if (count == 1)
-                CounterBtn.Text = $"You have clicked {count} time";
+                CounterBtn.Text = $"I am here {count} time";
             else
                 CounterBtn.Text = $"You have clicked {count} times";
 
