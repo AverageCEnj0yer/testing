@@ -36,12 +36,12 @@ namespace testing.View
             await Shell.Current.GoToAsync("///ForumPage");
         }
 
-        //private async void OnRightButton2Clicked(object sender, EventArgs e)
-        //{
-            // Example: Navigate to a Profile page (replace with your actual page/route)
-            // await Shell.Current.GoToAsync("///ProfilePage");
-            // Or handle this button as needed (e.g., a different action)
-        //}
+        private async void OnRightButton2Clicked(object sender, EventArgs e)
+        {
+        //Example: Navigate to a Profile page(replace with your actual page / route)
+             await Shell.Current.GoToAsync("///StudyPlan");
+            //Or handle this button as needed (e.g., a different action)
+        }
 
         // You might want to add logic here to visually indicate the currently active page
         // This could involve changing the color of the active button/icon.

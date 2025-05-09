@@ -29,4 +29,10 @@
         ContentTemplate="{DataTemplate local:ForumPage}"
         Route="ForumPage" />
 
+    <ShellContent
+        Title="Study"
+        Shell.NavBarIsVisible="False"
+        ContentTemplate="{DataTemplate local:StudyPlan}"
+        Route="StudyPlan" />
+
 </Shell>

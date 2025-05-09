@@ -61,5 +61,14 @@
             <Label Text="Forum" FontSize="10" HorizontalTextAlignment="Center"/>
         </VerticalStackLayout>
 
+        <VerticalStackLayout Grid.Column="4" HorizontalOptions="Center" VerticalOptions="Center">
+            <ImageButton Source="test1.png"
+                  BackgroundColor="Transparent"
+                  HeightRequest="30"
+                  WidthRequest="30"
+                  Clicked="OnRightButton2Clicked"/>
+            <Label Text="Study Plan" FontSize="10" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
     </Grid>
 </ContentView>

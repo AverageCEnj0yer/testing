@@ -8,7 +8,7 @@
         <VerticalStackLayout Grid.Row="0"
                              Padding="20"
                              Spacing="20">
-            <Label Text="Welcome to the Forum Page!"
+            <Label Text="Welcome to the Notes Page!"
                    FontSize="Large"
                    HorizontalOptions="Center" />
         </VerticalStackLayout>
