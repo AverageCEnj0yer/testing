@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="testing.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:testing.View">
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            Icon="test1.png"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="HomePage" />
+
+        <ShellContent
+            Title="Notes"
+            Icon="test1.png"
+            ContentTemplate="{DataTemplate local:NotesPage}"
+            Route="NotesPage" />
+
+        <ShellContent
+            Title="Flashcards"
+            Icon="test1.png"
+            ContentTemplate="{DataTemplate local:FlashcardsPage}"
+            Route="FlashcardsPage" />
+
+        <ShellContent
+            Title="Forum"
+            Icon="test1.png"
+            ContentTemplate="{DataTemplate local:ForumPage}"
+            Route="ForumPage" />
+    </TabBar>
+</Shell>
