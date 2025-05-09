@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="testing.View.CustomNavBarView"  >
+    <Grid ColumnDefinitions="*, *, Auto, *, *"
+          BackgroundColor="White"  >
+        <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">
+            <ImageButton Source="test1.png"
+                          BackgroundColor="Transparent"
+                          HeightRequest="30"
+                          WidthRequest="30"
+                          Clicked="OnLeftButton1Clicked"/>
+            <Label Text="Notes" FontSize="10" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <ImageButton Source="test1.png"
+                          BackgroundColor="Transparent"
+                          HeightRequest="30"
+                          WidthRequest="30"
+                          Clicked="OnLeftButton2Clicked"/>
+            <Label Text="Flashcards" FontSize="10" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
+        <Button Grid.Column="2"
+                x:Name="HomeButton"
+                Text="+"  Clicked="OnCenterButtonClicked"
+                CommandParameter="HomePage" BackgroundColor="Purple" TextColor="White"
+                FontSize="Large"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+
+            <Button.WidthRequest>
+                <OnPlatform x:TypeArguments="x:Double">
+                    <On Platform="iOS, Android" Value="50"/>
+                    <On Platform="WinUI, MacCatalyst" Value="60"/>
+                </OnPlatform>
+            </Button.WidthRequest>
+            <Button.HeightRequest>
+                <OnPlatform x:TypeArguments="x:Double">
+                    <On Platform="iOS, Android" Value="50"/>
+                    <On Platform="WinUI, MacCatalyst" Value="60"/>
+                </OnPlatform>
+            </Button.HeightRequest>
+            <Button.CornerRadius>
+                <OnPlatform x:TypeArguments="x:Int32">
+                    <On Platform="iOS, Android" Value="25"/>
+                    <On Platform="WinUI, MacCatalyst" Value="30"/>
+                </OnPlatform>
+            </Button.CornerRadius>
+
+        </Button>
+
+
+        <VerticalStackLayout Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center">
+            <ImageButton Source="test1.png"
+                          BackgroundColor="Transparent"
+                          HeightRequest="30"
+                          WidthRequest="30"
+                          Clicked="OnRightButton1Clicked"/>
+            <Label Text="Forum" FontSize="10" HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentView>

@@ -5,29 +5,28 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:testing.View">
 
-    <TabBar>
-        <ShellContent
-            Title="Home"
-            Icon="test1.png"
-            ContentTemplate="{DataTemplate local:MainPage}"
-            Route="HomePage" />
+    <ShellContent
+        Title="Home"
+        Shell.NavBarIsVisible="False"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="HomePage" />
 
-        <ShellContent
-            Title="Notes"
-            Icon="test1.png"
-            ContentTemplate="{DataTemplate local:NotesPage}"
-            Route="NotesPage" />
+    <ShellContent
+        Title="Notes"
+        Shell.NavBarIsVisible="False"
+        ContentTemplate="{DataTemplate local:NotesPage}"
+        Route="NotesPage" />
 
-        <ShellContent
-            Title="Flashcards"
-            Icon="test1.png"
-            ContentTemplate="{DataTemplate local:FlashcardsPage}"
-            Route="FlashcardsPage" />
+    <ShellContent
+        Title="Flashcards"
+        Shell.NavBarIsVisible="False"
+        ContentTemplate="{DataTemplate local:FlashcardsPage}"
+        Route="FlashcardsPage" />
 
-        <ShellContent
-            Title="Forum"
-            Icon="test1.png"
-            ContentTemplate="{DataTemplate local:ForumPage}"
-            Route="ForumPage" />
-    </TabBar>
+    <ShellContent
+        Title="Forum"
+        Shell.NavBarIsVisible="False"
+        ContentTemplate="{DataTemplate local:ForumPage}"
+        Route="ForumPage" />
+
 </Shell>
